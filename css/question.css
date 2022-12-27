@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+:root {
+  --Pink: #f9004d;
+  --Blue1: #191c26;
+  --Blue2: #0c86ec;
+  --grey1: #3d3c41;
+  --grey2: #6b6a6f;
+  --grey3: #ececec;
+  --mainTransition: 0.3s;
+}
+
+body {
+  background-color: var(--grey2);
+  background-image: linear-gradient(315deg, var(--grey2) 0%, var(--grey1) 100%);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  background-color: var(--Blue1);
+  border-radius: 10px;
+  box-shadow: 0 0px 8px 3px var(--Blue2);
+  width: 500px;
+  overflow: hidden;
+  color: var(--grey3);
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-weight: 300;
+  margin: 10px;
+  margin-left: 20px;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+.question {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--grey3);
+  margin-left: 20px;
+}
+.answers {
+  margin-bottom: 20px;
+  width: 60%;
+  text-align: left;
+  display: inline-block;
+  height: auto;
+}
+
+.answers label,
+input {
+  display: block;
+  margin-bottom: 15px;
+  border: none;
+  background-color: var(--grey3);
+  border-radius: 10px;
+  padding: 10px 20px; /*there is a problem i don't know what is it */
+  color: var(--Blue1);
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+button {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  background-color: var(--Blue2);
+  color: var(--grey3);
+  border: none;
+  border-radius: 8px;
+  padding: 20px 15px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+button:hover {
+  background-color: var(--grey1);
+}
+
+.slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.active-slide {
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 200px;
+  margin-top: 40px;
+  position: relative;
+}
+
+input,
+select,
+option {
+  display: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+  background-color: transparent;
+  width: 90%;
+  height: 65%;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+
+label:hover {
+  background-color: var(--Pink);
+}
+
+a {
+  color: var(--grey3);
+  text-decoration: none;
+}
+
+/*
+input[type="radio"]:checked + label{
+  background-color: aqua;
+}*/
+
+input[type=radio]:checked+label {
+  background-color: var(--Pink);;
+}

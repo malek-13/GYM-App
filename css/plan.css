@@ -1,0 +1,322 @@
+/* start variables */
+:root {
+  --Pink: #f9004d;
+  --Blue1: #191c26;
+  --Blue2: #0c86ec;
+  --grey1: #3d3c41;
+  --grey2: #6b6a6f;
+  --grey3: #ececec;
+  --mainTransition: 0.3s;
+}
+/* end variable*/
+#root > h1 {
+  text-align: center;
+  font-size: 50px;
+  color: var(--Pink);
+  margin-bottom: 0;
+}
+.line {
+  width: 400px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: var(--Pink);
+  margin: 0 auto 120px;
+}
+
+/*start challenge*/
+.container h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+/*end challenge*/
+
+/*start weeks*/
+
+.weeks .container .ww {
+  height: 300px;
+  width: 100%;
+  background-color: var(--grey1);
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.weeks .container .ww .day {
+  width: 155px;
+  background-color: var(--grey2);
+  height: calc(100% - 85px);
+  margin-bottom: 15px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+.weeks .container .ww .decoration {
+  background-color: var(--Blue2);
+  width: 8px;
+  height: 142px;
+  position: absolute;
+  top: 20px;
+  left: 34px;
+  border-radius: 3px;
+}
+
+/* .weeks .container .week1:before {
+  content: "";
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 54px;
+  left: -14px;
+  transform: rotate(-90deg);
+}
+.weeks .container .week2:before {
+  content: "";
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 54px;
+  left: -14px;
+  transform: rotate(-90deg);
+}
+.weeks .container .week3:before {
+  content: "";
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 54px;
+  left: -14px;
+  transform: rotate(-90deg);
+}
+.weeks .container .week4:before {
+  content: "";
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 54px;
+  left: -14px;
+  transform: rotate(-90deg);
+} 
+.weeks .container .ww .decoration:before {
+  content: "7-17 MIN";
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  width: 500px;
+  position: absolute;
+  top: -5px;
+  left: 50px;
+}
+.weeks .container .ww .decoration:after {
+  content: "each day";
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+  width: 500px;
+  position: absolute;
+  top: 7px;
+  left: 220px;
+}*/
+
+.weeks .container .week1 {
+  height: 300px;
+  width: 100%;
+  padding: 5px;
+  background-color: var(--grey1);
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 6% auto;
+  grid-template-rows: 25% auto;
+  grid-template-areas:
+    "one two"
+    "one three";
+  gap: 5px;
+  position: relative;
+}
+
+.one {
+  grid-area: one;
+}
+
+.one > div {
+  width: 8px;
+  height: 122px;
+  background-color: var(--Blue2);
+  margin: 18px auto;
+}
+
+.one h5 {
+  color: white;
+  font-size: 28px;
+  letter-spacing: 3px;
+  transform: rotate(-90deg);
+  width: 123px;
+  margin: 55px -21px;
+}
+
+.two {
+  grid-area: two;
+  display: flex;
+  align-items: center;
+}
+
+.two h5 {
+  color: white;
+  font-size: 50px;
+  margin: auto 10px auto 20px;
+}
+
+.two p {
+  color: white;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.three {
+  grid-area: three;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-areas: "day1 day2 day3 day4 day5 day6 day7";
+  padding-right: 10px;
+  padding-bottom: 10px;
+  gap: 10px;
+}
+
+.day1 {
+  grid-area: day1;
+}
+.day2 {
+  grid-area: day2;
+}
+.day3 {
+  grid-area: day3;
+}
+.day4 {
+  grid-area: day4;
+}
+.day5 {
+  grid-area: day5;
+}
+.day6 {
+  grid-area: day6;
+}
+.day7 {
+  grid-area: day7;
+}
+.three > div {
+  background-color: var(--grey2);
+}
+.weeks div {
+  border-radius: 5px;
+}
+
+.day div > p {
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.day div ion-icon {
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  margin-left: 21px;
+  margin-top: 14px;
+}
+.week1 {
+  position: relative;
+}
+.day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* .day > div {
+  height: 100%;
+  width: 100%;
+} */
+.day > div {
+  cursor: pointer;
+}
+
+.three .day ul {
+  list-style: none;
+  background-color: var(--Blue2);
+  padding: 30px 0px;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 103%;
+  border-radius: 5px;
+  z-index: 999;
+  opacity: 0;
+  display: none;
+  transition: all 0.7s;
+}
+
+.triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 19px solid transparent;
+  border-color: transparent transparent var(--Blue2) transparent;
+  top: 90.4%;
+  opacity: 0;
+  display: none;
+  transition: all 2s;
+}
+/* .three .day:hover ul {
+  display: block;
+} */
+.day1 .triangle {
+  left: 135px;
+}
+
+.day2 .triangle {
+  left: 280px;
+}
+.day3 .triangle {
+  left: 435px;
+}
+.day4 .triangle {
+  left: 585px;
+}
+.day5 .triangle {
+  left: 740px;
+}
+.day6 .triangle {
+  left: 890px;
+}
+.day7 .triangle {
+  left: 1040px;
+}
+
+/*exercices*/
+.container {
+  gap: 6px;
+}
+.main .container .exercice {
+  width: 250px;
+}
+
+/* #btn:checked .day {
+  border: 3px solid var(--Blue2);
+} */
+
+/*end weeks*/
+.hiddenn {
+  display: none;
+}

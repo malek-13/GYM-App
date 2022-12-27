@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css webfonts/all.min.css" />
+    <link rel="stylesheet" href="css webfonts/brands.min.css" />
+    <link rel="stylesheet" href="css webfonts/fontawesome.min.css" />
+    <link rel="stylesheet" href="css webfonts/regular.min.css" />
+    <link rel="stylesheet" href="css webfonts/solid.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>workout project</title>
+  </head>
+  <body>
+    <div class="square"></div>
+
+    <!-- Start Header -->
+    <div class="header" id="header">
+      <div class="container">
+        <a class="logo center" href="#">Lo<span>go</span> </a>
+        <ul class="main-nav">
+          <li><a href="#Home" class="nav-link">Home</a></li>
+          <li><a href="#Workout" class="nav-link">Workout</a></li>
+          <li><a href="#calcul" class="nav-link">calcul</a></li>
+          <li><a href="meals.html" class="nav-link">Recipes</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </div>
+    <!--end header-->
+
+    <!-- start achieve-->
+    <div class="achieve">
+      <div class="container">
+        <div class="caption">
+          <h3>Achieve Your</h3>
+          <h2>Ultimate <span>Goal</span></h2>
+          <p>
+            We will lead you in this journy, Let's Do it!!
+          </p>
+          <a class="btm" href="question.html">Get Started</a>
+        </div>
+        <img src="images/body3.png" alt="body building" />
+      </div>
+    </div>
+    <!-- end achieve-->
+
+    <!--start workout-->
+    <div class="workout" id="Workout">
+      <div class="container flex-col">
+        <h2>workout</h2>
+        <div class="grid">
+          <a href="exercices.html" class="item chest">
+            <img src="images/chest.jpg" alt="chest" />
+            <div>CHEST</div>
+          </a>
+          <a href="exercices.html" class="item abs">
+            <img src="images/abs.jpeg" alt="abs" />
+            <div>ABS</div>
+          </a>
+          <a href="exercices.html" class="item arm">
+            <img src="images/arm.jpeg" alt="arm" />
+            <div>ARM</div>
+          </a>
+          <a href="exercices.html" class="item shoulder">
+            <img src="images/shoulder.jpeg" alt="shoulder" />
+            <div>SHOULDER</div>
+          </a>
+          <a href="exercices.html" class="item back">
+            <img src="images/back.jpeg" alt="back" />
+            <div>BACK</div>
+          </a>
+          <a href="exercices.html" class="item legs">
+            <img src="images/legs.jpeg" alt="legs" />
+            <div>LEGS</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--end workout-->
+
+    <!--start nutrition-->
+    <!-- <div class="nutrition">
+        <div class="container flex-col">
+            <h2>Nutrition</h2>
+            <div class="foods">
+                <div>food1</div>
+                <div>food2</div>
+                <div>food3</div>
+                <div>food4</div>
+            </div>
+            <a calss="center" href="#">show more >></a>
+        </div>
+    </div>-->
+    <!--end nutrition-->
+
+    <!--start calcul-->
+    <div class="calcul" id="calcul">
+      <div class="container flex-col">
+        <h2>Calories Calculation</h2>
+        <div class="section">
+          <div class="image"><img src="images/protein4.png" alt="" /></div>
+          <form action="" class="form flex-col">
+            
+            <input
+              type="number"
+              name="weight"
+              placeholder="Your weight in kg"
+              required
+              id="weight"
+            />
+            <select
+              name="sex"
+              aria-value="sex"
+              class="selection"
+              required
+              id="sex"
+            >
+              <option value="male">male</option>
+              <option value="female">female</option>
+            </select>
+            <select name="activity" id="activity" class="selection" required>
+              <option value="easy">easy</option>
+              <option value="meduim">meduim</option>
+              <option value="hard">hard</option>
+              <option value="extremly hard">extremly hard</option>
+            </select>
+            <!--<input type="submit" class="submit" value="calculate" onclick="getValueInput()"/>-->
+            <button onclick="getValueInput()" type="button">
+              click here
+            </button>
+            <div class="water-cal" id="resulta">
+              <p id="calories-cal" class="result cal"></p>
+              <p id="water-cal" class="result water"></p>
+            </div>              
+          </form>
+         
+        </div>
+      </div>
+    </div>
+    <!--end calcul-->
+
+    <!-- Start Footer -->
+    <footer class="footer">
+      <div class="container">
+        <h3>OUR GYM</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. amet
+          consectetur adipisicing.
+        </p>
+        <ul class="socials">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube"></i></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+          </li>
+        </ul>
+        <div class="footer-bottom">
+          <p>copyright &copy;2022 Dream Body. Made with <span>Love</span></p>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+    <script src="script/cal.js"></script>
+    <script src="script/nav.js"></script>
+  </body>
+</html>
